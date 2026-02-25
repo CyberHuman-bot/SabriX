@@ -1,0 +1,28 @@
+{
+  "name": "SabriX",
+   "version": "0.0.1",
+  "description": "Simple matrix client for KaiOS",
+  "subtitle": "Simple matrix client for KaiOS",
+  "launch_path": "/index.html",
+  "origin": "app://MyApp",
+  "icons": {
+    "56": "/icons/SabriX_56.png",
+    "112": "/icons/SabriX_112.png"
+  },
+  "theme_color": "#65ceff",
+  "developer": {
+    "name": "Yaman Abdullah",
+    "url": "https://github.com/CyberHuman-bot"
+  },
+  "type": "web",
+  "fullscreen": "true",
+  "locales": {
+    "en-US": {
+      "name": "SabriX",
+      "description": "Simple matrix client for KaiOS",
+      "subtitle": "Simple matrix client for KaiOS"
+    }
+  },
+  "default_locale": "en-US",
+  "orientation": [ "portrait-primary" ]
+}

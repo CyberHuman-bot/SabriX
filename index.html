@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+  <title>SabriX</title>
+  <link rel="manifest" href="manifest.webapp" type="application/x-web-app-manifest+json">
+
+  <link rel="stylesheet" href="ui/main.css">
+  <link rel="stylesheet" href="ui/landscape.css">
+
+  <script src="code/app.js" defer></script>
+  <script src="code/KaiOS.js" defer></script>
+  <script src="https://static.kaiads.com/ads-sdk/ads-sdk.v5.min.js"></script>
+</head>
+
+<body>
+
+<div id="views">
+
+  <!-- ================= LOGIN ================= -->
+  <div class="view active" id="viewLogin">
+
+    <h1>SabriX</h1>
+    <p>Create a account at <a href="https://account.matrix.org/register" target="_blank">Matrix Account</a></p>
+    <fieldset>
+      <legend>Home Server</legend>
+      <input id="HomeServer" type="text" placeholder="matrix.org">
+    </fieldset>
+
+    <fieldset>
+      <legend>Username</legend>
+      <input id="username" type="text" placeholder="@user:matrix.org">
+    </fieldset>
+
+    <fieldset>
+      <legend>Password</legend>
+      <input id="password" type="password">
+    </fieldset>
+
+    <button class="navItem" id="loginBtn">
+      Login
+    </button>
+
+  </div>
+
+
+  <!-- ================= ROOMS ================= -->
+  <div class="view" id="viewRooms">
+
+    <h1>Rooms</h1>
+
+    <div id="roomsList" class="list"></div>
+
+    <button class="navItem" id="refreshRooms">
+      Refresh
+    </button>
+
+    <button class="navItem" id="logoutBtn">
+      Logout
+    </button>
+
+  </div>
+
+
+  <!-- ================= CHAT ================= -->
+  <div class="view" id="viewChat">
+
+    <h1 id="chatTitle">Chat</h1>
+
+    <div id="messages" class="list"></div>
+
+    <fieldset>
+      <legend>Message</legend>
+      <input id="msgInput" type="text">
+    </fieldset>
+
+    <button class="navItem" id="sendBtn">
+      Send
+    </button>
+
+    <button class="navItem" id="backToRooms">
+      Back
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- ================= SOFTKEY BAR ================= -->
+<div id="softkeyBar">
+  <button id="bar-back">Back</button>
+  <button id="bar-action">OK</button>
+  <button id="bar-options">Menu</button>
+</div>
+
+<div id="keyOverlay"></div>
+
+</body>
+</html>

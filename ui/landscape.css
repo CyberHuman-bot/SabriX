@@ -1,0 +1,15 @@
+/* KaiOS landscape devices (320x240) */
+@media screen and (orientation : landscape) {
+  body {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .navItem {
+    margin: 0 0 1% 0;
+  }
+}
