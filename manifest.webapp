@@ -3,8 +3,8 @@
    "version": "0.0.1",
   "description": "Simple matrix client for KaiOS",
   "subtitle": "Simple matrix client for KaiOS",
-  "launch_path": "/index.html",
-  "origin": "app://MyApp",
+  "launch_path": ""launch_path": "/SabriX/index.html"",
+  "origin": "app://sabrix",
   "icons": {
     "56": "/icons/SabriX_56.png",
     "112": "/icons/SabriX_112.png"
